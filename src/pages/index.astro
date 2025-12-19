@@ -5,109 +5,46 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<main>
-  <section class="hero">
-    <h1>Wyatt Reisz</h1>
-    <p class="tagline">Business Engineering student • Entrepreneur • NCAA athlete</p>
-
-    <p>
-      I’m a Business Engineering &amp; Management Science student at Colorado School of Mines (B.S. expected May 2026),
-      specializing in Financial Economics and AI/ML. I build and operate businesses at the intersection of analytics,
-      operations, and real-world execution—while competing as a varsity wrestler.
-    </p>
-
-    <div class="cta">
-      <a class="button" href="/about">About</a>
-      <a class="button secondary" href="/blog">Writing</a>
-      <!-- Optional: publish email only if you want it public -->
-      <a class="button secondary" href="mailto:wyattreisz@gmail.com">Contact</a>
-    </div>
-  </section>
-
-  <section>
-    <h2>What I’m working on</h2>
-    <ul>
-      <li>
-        <strong>Agri-Drone Technologies</strong> — Co-founding a Midwest ag-drone venture (hardware + mission-planning &amp; fleet software),
-        building dealer/training/warranty infrastructure and navigating FAA compliance.
-      </li>
-      <li>
-        <strong>RE Global Distribution</strong> — Building China→U.S. supply lines: factory vetting, MOQs/lead times, QC, landed cost, freight, and 3PL execution.
-      </li>
-      <li>
-        <strong>Reisz &amp; Shine Window Cleaning</strong> — Co-founded and scaled a home-services company from $50K→$150K revenue (’24–’25),
-        serving 700+ homes; I lead sales/estimating, marketing ops, and scheduling.
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Highlights</h2>
-    <ul class="highlights">
-      <li><strong>GPA:</strong> 3.33/4.00 (Dean’s List — Spring 2025)</li>
-      <li><strong>Wrestling:</strong> Varsity Team Captain; NCAA D-II Qualifier (2025)</li>
-      <li>
-        <strong>Construction/engineering:</strong> Internship work supported estimating and field execution (takeoffs, calcs, CADD, surveying, cost tracking).
-      </li>
-      <li>
-        <strong>Research/project work:</strong> Led an LCOE-based analysis of nuclear energy vs. other sources and delivered a ranked cost-efficiency model.
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Academic focus</h2>
-    <p>
-      My coursework emphasizes data-driven decision-making in business and engineering contexts—programming, data science,
-      economics/finance, and operations-oriented analysis.
-    </p>
-    <ul>
-      <li><strong>Computing &amp; data:</strong> Data Science; Data Structures &amp; Algorithms; Foundations of Programming</li>
-      <li><strong>Business &amp; finance:</strong> Corporate Finance; Accounting; Business Analytics; Marketing; Management; Engineering Economics</li>
-      <li><strong>Economics &amp; energy:</strong> Energy Economics; Intermediate Macroeconomics (in progress)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Core skills</h2>
-    <ul class="skills">
-      <li><strong>Technical:</strong> Python, C++, R, Excel, Civil3D/CADD, Bluebeam, Procore</li>
-      <li><strong>Business/analytics:</strong> Financial modeling (NPV/IRR/CF), business analytics, LCOE</li>
-      <li><strong>Execution:</strong> Estimating, subcontractor coordination, scheduling, customer ops</li>
-    </ul>
-  </section>
-</main>
-
-<style>
-  .hero {
-    padding: 2.5rem 0 1.5rem;
-  }
-  .tagline {
-    margin: 0.25rem 0 1rem;
-    opacity: 0.8;
-  }
-  .cta {
-    margin-top: 1.25rem;
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-  }
-  .button {
-    display: inline-block;
-    padding: 0.6rem 0.9rem;
-    border-radius: 0.6rem;
-    text-decoration: none;
-    border: 1px solid currentColor;
-  }
-  .button.secondary {
-    opacity: 0.85;
-  }
-  section {
-    margin: 2rem 0;
-  }
-  .highlights,
-  .skills {
-    display: grid;
-    gap: 0.6rem;
-  }
-</style>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<p>
+				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
+				template serves as a lightweight, minimally-styled starting point for anyone looking to build
+				a personal website, blog, or portfolio with Astro.
+			</p>
+			<p>
+				This template comes with a few integrations already configured in your
+				<code>astro.config.mjs</code> file. You can customize your setup with
+				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
+				React, or Vue to your project.
+			</p>
+			<p>Here are a few ideas on how to get started with the template:</p>
+			<ul>
+				<li>Edit this page in <code>src/pages/index.astro</code></li>
+				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
+				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
+				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
+				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
+			</ul>
+			<p>
+				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
+					>read the docs
+				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
+			</p>
+			<p>
+				Looking for a blog template with a bit more personality? Check out <a
+					href="https://github.com/Charca/astro-blog-template"
+					>astro-blog-template
+				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
